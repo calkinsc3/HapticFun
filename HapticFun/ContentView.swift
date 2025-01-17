@@ -67,7 +67,6 @@ struct ContentView: View {
         var events = [CHHapticEvent]()
         
         for i in stride(from: 0, to: 1, by: 0.3) {
-            print("In stride: \(i)")
             let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: Float(i))
             let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: Float(i))
             
